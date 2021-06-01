@@ -1,0 +1,13 @@
+Run script.sh:
+	./script.sh
+Wait for memory and information gathering.
+Done.
+
+Additional Inforamtion:
+	Creating module.dwarf from module.ko
+		dwarfdump -di module.ko > module.dwarf
+	Creating the profile
+		zip profile_name module.dwarf System.map_file
+		**profile name normally named as os_kernel-version**
+	Saving profile to volatility
+		cp profile_name /opt/volatility/volatility/plugins/overlays/linux/
