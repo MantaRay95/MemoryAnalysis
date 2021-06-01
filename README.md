@@ -6,6 +6,10 @@ pluginsautomate.sh - will run all common plugins in memory analysis and save the
 	
 	usage: ./pluginsautomate.sh
 
+
 basicanalysis.sh - will use a pslist.txt input file and analyze the pslist for abnormal such as abnormal parent child relationships.
 	
 	usage: ./basicanalysis.sh path_to_pslist.txt
+
+
+linux_memory - a linux memory collecter(using avml(by microsoft)) with artifacts gathering for profile creation.
